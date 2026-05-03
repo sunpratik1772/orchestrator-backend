@@ -1,0 +1,12 @@
+type_id: schedule
+description: Run on a cron schedule.
+ui:
+  display_name: Schedule
+  icon: Clock
+  color: "#7c3aed"
+  palette: { section: { id: triggers } }
+input_ports: []
+output_ports: [{ name: payload, type: object }]
+params:
+  - { name: cron, type: string, description: "Cron expression", default: "0 * * * *" }
+  

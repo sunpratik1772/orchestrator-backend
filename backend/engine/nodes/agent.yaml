@@ -1,0 +1,25 @@
+type_id: agent
+description: Call Gemini with rows + prompt. Aggregate or per-row mode.
+ui:
+  display_name: AI Agent
+  icon: Bot
+  color: "#8b5cf6"
+  palette: { section: { id: ai } }
+input_ports: [{ name: rows, type: dataframe, optional: true }]
+output_ports: [{ name: response, type: text }]
+params:
+  - { name: prompt, type: string, required: false, widget: textarea,
+      placeholder: "You are a sales analyst. Be concise." }
+  - { name: task, type: string, required: false, widget: textarea,
+      placeholder: "Summarize the top 3 trends" }
+  - { name: perRow, type: boolean, default: false, widget: switch }
+  - { name: rowTemplate, type: string, required: false, widget: textarea,
+      placeholder: "Lead: {{first_name}} from {{company}}, score {{score}}",
+      visible_if: { perRow: true } }
+  - { name: outputColumn, type: string, default: "_ai_response",
+      visible_if: { perRow: true } }
+  - { name: maxRows, type: number, default: 5,
+      description: "Cap rows for per-row AI calls. Keep low (≤10) for snappy demos.",
+      visible_if: { perRow: true } }
+  - { name: model, type: string, default: "gemini-2.5-flash" }
+  

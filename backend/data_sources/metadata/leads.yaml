@@ -1,0 +1,35 @@
+id: leads.csv
+description: Sales leads with score / stage / company.
+columns:
+  - { name: lead_id, type: string }
+  - { name: first_name, type: string }
+  - { name: last_name, type: string }
+  - { name: email, type: string }
+  - { name: company, type: string }
+  - { name: industry, type: string }
+  - { name: country, type: string }
+  - { name: score, type: number }
+  - { name: stage, type: enum, values: [new, contacted, qualified, proposal, negotiation] }
+  - { name: created_at, type: date }
+rows:
+  - { lead_id: L001, first_name: Alice,   last_name: Johnson,   email: alice.johnson@acmecorp.com,  company: Acme Corp,       industry: SaaS,          country: US, score: 87, stage: qualified,   created_at: '2026-01-15' }
+  - { lead_id: L002, first_name: Bob,     last_name: Williams,  email: bob.w@techco.io,             company: TechCo,          industry: FinTech,       country: UK, score: 62, stage: contacted,   created_at: '2026-01-18' }
+  - { lead_id: L003, first_name: Carol,   last_name: Davis,     email: carol@startupco.co,          company: StartupCo,       industry: HealthTech,    country: US, score: 94, stage: qualified,   created_at: '2026-01-20' }
+  - { lead_id: L004, first_name: Dan,     last_name: Miller,    email: dan.miller@bigcorp.com,      company: BigCorp,         industry: Enterprise,    country: US, score: 71, stage: proposal,    created_at: '2026-01-22' }
+  - { lead_id: L005, first_name: Eva,     last_name: Chen,      email: eva@designio.co,             company: Design IO,       industry: Agency,        country: CA, score: 45, stage: new,         created_at: '2026-01-25' }
+  - { lead_id: L006, first_name: Frank,   last_name: Lee,       email: frank@ventures.co,           company: Ventures Inc,    industry: VC,            country: US, score: 88, stage: qualified,   created_at: '2026-01-28' }
+  - { lead_id: L007, first_name: Grace,   last_name: Kim,       email: grace.k@mediaco.com,         company: Media Co,        industry: Media,         country: AU, score: 55, stage: contacted,   created_at: '2026-02-01' }
+  - { lead_id: L008, first_name: Henry,   last_name: Park,      email: henry@cloudops.io,           company: CloudOps,        industry: DevOps,        country: US, score: 91, stage: negotiation, created_at: '2026-02-03' }
+  - { lead_id: L009, first_name: Iris,    last_name: Wang,      email: iris.w@aisolutions.ai,       company: AI Solutions,    industry: AI/ML,         country: US, score: 79, stage: proposal,    created_at: '2026-02-06' }
+  - { lead_id: L010, first_name: Jack,    last_name: Thomas,    email: jack@retailgroup.com,        company: Retail Group,    industry: Retail,        country: UK, score: 38, stage: new,         created_at: '2026-02-10' }
+  - { lead_id: L011, first_name: Kate,    last_name: Brown,     email: kate.b@logistics.co,         company: Logistics Ltd,   industry: Logistics,     country: DE, score: 83, stage: qualified,   created_at: '2026-02-12' }
+  - { lead_id: L012, first_name: Leo,     last_name: Garcia,    email: leo@paytech.io,              company: PayTech,         industry: FinTech,       country: US, score: 76, stage: proposal,    created_at: '2026-02-15' }
+  - { lead_id: L013, first_name: Mia,     last_name: Robinson,  email: mia.r@cybersec.com,          company: CyberSec Inc,    industry: Security,      country: US, score: 92, stage: negotiation, created_at: '2026-02-18' }
+  - { lead_id: L014, first_name: Noah,    last_name: Martinez,  email: noah.m@edtech.co,            company: EdTech Corp,     industry: EdTech,        country: US, score: 67, stage: contacted,   created_at: '2026-02-20' }
+  - { lead_id: L015, first_name: Olivia,  last_name: Taylor,    email: olivia@healthcare.org,       company: HealthCare Org,  industry: Healthcare,    country: CA, score: 84, stage: qualified,   created_at: '2026-02-22' }
+  - { lead_id: L016, first_name: Paul,    last_name: Anderson,  email: paul.a@manufact.com,         company: Manufact Corp,   industry: Manufacturing, country: US, score: 49, stage: new,         created_at: '2026-02-25' }
+  - { lead_id: L017, first_name: Quinn,   last_name: Jackson,   email: quinn@realestate.co,         company: Real Estate Co,  industry: Real Estate,   country: US, score: 73, stage: proposal,    created_at: '2026-02-28' }
+  - { lead_id: L018, first_name: Rachel,  last_name: White,     email: rachel.w@biotech.io,         company: BioTech Labs,    industry: BioTech,       country: UK, score: 96, stage: negotiation, created_at: '2026-03-01' }
+  - { lead_id: L019, first_name: Sam,     last_name: Harris,    email: sam@agritech.farm,           company: AgriTech Farm,   industry: AgTech,        country: AU, score: 58, stage: contacted,   created_at: '2026-03-05' }
+  - { lead_id: L020, first_name: Tina,    last_name: Clark,     email: tina.c@insurtech.co,         company: InsurTech Co,    industry: InsurTech,     country: US, score: 81, stage: qualified,   created_at: '2026-03-08' }
+  

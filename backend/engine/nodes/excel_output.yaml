@@ -1,0 +1,13 @@
+type_id: excel_output
+description: Write multi-tab Excel from each upstream dataset.
+ui:
+  display_name: Excel Export
+  icon: FileSpreadsheet
+  color: "#16a34a"
+  palette: { section: { id: output } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: file, type: object }]
+params:
+  - { name: filename, type: string, default: output.xlsx }
+  - { name: tabNames, type: string, required: false, placeholder: "Tab1,Tab2" }
+  

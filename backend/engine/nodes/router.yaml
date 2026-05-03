@@ -1,0 +1,13 @@
+type_id: router
+description: Route rows to labelled branches by an expression returning a label.
+ui:
+  display_name: Router
+  icon: Share2
+  color: "#06b6d4"
+  palette: { section: { id: logic } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: expression, type: expression, required: true,
+      placeholder: "row.region", widget: code_editor }
+  

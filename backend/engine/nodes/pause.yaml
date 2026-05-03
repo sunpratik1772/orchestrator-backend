@@ -1,0 +1,12 @@
+type_id: pause
+description: Wait for a number of milliseconds before continuing.
+ui:
+  display_name: Pause
+  icon: PauseCircle
+  color: "#06b6d4"
+  palette: { section: { id: logic } }
+input_ports: [{ name: rows, type: dataframe, optional: true }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: durationMs, type: number, default: 500 }
+  

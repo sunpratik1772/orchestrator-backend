@@ -1,0 +1,13 @@
+type_id: function
+description: Run Python code with access to input and previous output.
+ui:
+  display_name: Function
+  icon: FunctionSquare
+  color: "#06b6d4"
+  palette: { section: { id: logic } }
+input_ports: [{ name: any, type: any, optional: true }]
+output_ports: [{ name: any, type: any }]
+params:
+  - { name: code, type: code, required: true, widget: code_editor,
+      placeholder: "result = {'value': prevOutput.get('rowCount', 0) * 2}" }
+  

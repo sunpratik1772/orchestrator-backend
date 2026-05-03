@@ -1,0 +1,29 @@
+id: employees.csv
+description: Employees with role / salary / performance.
+columns:
+  - { name: employee_id, type: string }
+  - { name: name, type: string }
+  - { name: department, type: string }
+  - { name: role, type: string }
+  - { name: salary, type: number }
+  - { name: hire_date, type: date }
+  - { name: country, type: string }
+  - { name: active, type: boolean }
+  - { name: performance, type: enum, values: [exceeds, meets, below] }
+rows:
+  - { employee_id: E001, name: Alice Johnson,  department: Engineering,  role: Senior Engineer,    salary: 145000, hire_date: '2021-03-01', country: US, active: true,  performance: exceeds }
+  - { employee_id: E002, name: Bob Williams,   department: Sales,        role: Account Executive,  salary: 82000,  hire_date: '2022-06-15', country: UK, active: true,  performance: meets }
+  - { employee_id: E003, name: Carol Davis,    department: Engineering,  role: Staff Engineer,     salary: 175000, hire_date: '2019-11-01', country: US, active: true,  performance: exceeds }
+  - { employee_id: E004, name: Dan Miller,     department: Marketing,    role: Marketing Manager,  salary: 95000,  hire_date: '2021-08-20', country: US, active: true,  performance: meets }
+  - { employee_id: E005, name: Eva Chen,       department: Design,       role: UX Lead,            salary: 120000, hire_date: '2020-05-10', country: CA, active: true,  performance: exceeds }
+  - { employee_id: E006, name: Frank Lee,      department: Engineering,  role: Backend Engineer,   salary: 135000, hire_date: '2022-01-10', country: US, active: true,  performance: meets }
+  - { employee_id: E007, name: Grace Kim,      department: Support,      role: Support Lead,       salary: 72000,  hire_date: '2023-03-01', country: AU, active: true,  performance: meets }
+  - { employee_id: E008, name: Henry Park,     department: Engineering,  role: DevOps Engineer,    salary: 142000, hire_date: '2020-09-15', country: US, active: false, performance: below }
+  - { employee_id: E009, name: Iris Wang,      department: Data,         role: Data Scientist,     salary: 155000, hire_date: '2021-07-01', country: US, active: true,  performance: exceeds }
+  - { employee_id: E010, name: Jack Thomas,    department: Sales,        role: SDR,                salary: 65000,  hire_date: '2023-08-01', country: UK, active: true,  performance: meets }
+  - { employee_id: E011, name: Kate Brown,     department: Finance,      role: Financial Analyst,  salary: 98000,  hire_date: '2020-11-15', country: US, active: true,  performance: exceeds }
+  - { employee_id: E012, name: Leo Garcia,     department: Engineering,  role: Frontend Engineer,  salary: 128000, hire_date: '2022-04-01', country: US, active: true,  performance: meets }
+  - { employee_id: E013, name: Mia Robinson,   department: Security,     role: Security Engineer,  salary: 148000, hire_date: '2021-02-15', country: US, active: true,  performance: exceeds }
+  - { employee_id: E014, name: Noah Martinez,  department: Marketing,    role: Content Strategist, salary: 78000,  hire_date: '2023-01-10', country: US, active: true,  performance: meets }
+  - { employee_id: E015, name: Olivia Taylor,  department: Operations,   role: Ops Manager,        salary: 105000, hire_date: '2020-06-01', country: CA, active: true,  performance: exceeds }
+  

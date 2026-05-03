@@ -1,0 +1,14 @@
+type_id: gmail
+description: Send email via Gmail (stub when GMAIL_CLIENT_SECRET is missing).
+ui:
+  display_name: Gmail
+  icon: Mail
+  color: "#ea4335"
+  palette: { section: { id: integrations } }
+input_ports: [{ name: rows, type: dataframe, optional: true }]
+output_ports: [{ name: result, type: object }]
+params:
+  - { name: to, type: string, required: true }
+  - { name: subject, type: string, required: true }
+  - { name: body, type: string, widget: textarea }
+  

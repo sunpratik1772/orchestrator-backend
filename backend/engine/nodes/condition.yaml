@@ -1,0 +1,15 @@
+type_id: condition
+description: Branch rows into true / false outputs by an expression.
+ui:
+  display_name: Condition
+  icon: GitBranch
+  color: "#06b6d4"
+  palette: { section: { id: logic } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports:
+  - { name: true_branch, type: dataframe }
+  - { name: false_branch, type: dataframe }
+params:
+  - { name: expression, type: expression, required: true,
+      placeholder: "row.status === 'delivered'", widget: code_editor }
+  

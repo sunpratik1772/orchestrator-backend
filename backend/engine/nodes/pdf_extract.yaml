@@ -1,0 +1,12 @@
+type_id: pdf_extract
+description: Extract text from a PDF (mock content by default).
+ui:
+  display_name: PDF Extract
+  icon: FileText
+  color: "#0ea5e9"
+  palette: { section: { id: data } }
+input_ports: []
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: source, type: string, description: "PDF filename", default: default }
+  

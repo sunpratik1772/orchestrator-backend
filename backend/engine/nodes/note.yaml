@@ -1,0 +1,12 @@
+type_id: note
+description: Canvas comment / annotation. Pass-through with text.
+ui:
+  display_name: Note
+  icon: StickyNote
+  color: "#475569"
+  palette: { section: { id: output } }
+input_ports: []
+output_ports: []
+params:
+  - { name: content, type: string, default: "", widget: textarea }
+  

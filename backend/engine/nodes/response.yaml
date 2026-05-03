@@ -1,0 +1,12 @@
+type_id: response
+description: Return a final workflow response.
+ui:
+  display_name: Response
+  icon: ArrowRight
+  color: "#b45309"
+  palette: { section: { id: output } }
+input_ports: [{ name: any, type: any }]
+output_ports: [{ name: response, type: text }]
+params:
+  - { name: content, type: string, required: false, widget: textarea }
+  

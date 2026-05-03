@@ -1,0 +1,13 @@
+type_id: code
+description: Run Python code on the rows array. Code MUST set 'rows' or return via 'result'.
+ui:
+  display_name: Code
+  icon: Code2
+  color: "#06b6d4"
+  palette: { section: { id: logic } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: code, type: code, required: true, widget: code_editor,
+      placeholder: "result = [r for r in rows if r['active']]" }
+  

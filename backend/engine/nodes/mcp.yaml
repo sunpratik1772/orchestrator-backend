@@ -1,0 +1,14 @@
+type_id: mcp
+description: Call a Model Context Protocol tool.
+ui:
+  display_name: MCP Tool
+  icon: Cpu
+  color: "#0f766e"
+  palette: { section: { id: integrations } }
+input_ports: [{ name: rows, type: dataframe, optional: true }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: serverUrl, type: string, required: false }
+  - { name: tool, type: string, required: true }
+  - { name: params, type: json, required: false, widget: json_editor }
+  

@@ -1,0 +1,12 @@
+type_id: webhook_trigger
+description: Listen for incoming webhooks.
+ui:
+  display_name: Webhook
+  icon: Zap
+  color: "#7c3aed"
+  palette: { section: { id: triggers } }
+input_ports: []
+output_ports: [{ name: payload, type: object }]
+params:
+  - { name: secret, type: string, description: "Optional shared secret", required: false }
+  

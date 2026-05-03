@@ -1,0 +1,12 @@
+type_id: select_columns
+description: Pick a specific subset of columns.
+ui:
+  display_name: Select Columns
+  icon: Columns
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: columns, type: string, required: true, placeholder: "col1,col2,col3" }
+  

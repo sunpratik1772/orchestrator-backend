@@ -1,0 +1,12 @@
+type_id: manual_trigger
+description: Start workflow manually.
+ui:
+  display_name: Manual Trigger
+  icon: Play
+  color: "#7c3aed"
+  palette: { section: { id: triggers } }
+input_ports: []
+output_ports:
+  - { name: payload, type: object, store_at: alert_payload }
+params: []
+  

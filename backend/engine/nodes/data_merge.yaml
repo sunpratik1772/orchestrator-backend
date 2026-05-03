@@ -1,0 +1,12 @@
+type_id: data_merge
+description: Concatenate or union multiple datasets.
+ui:
+  display_name: Merge
+  icon: Layers
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: strategy, type: enum, default: concat, enum: [concat, union] }
+  

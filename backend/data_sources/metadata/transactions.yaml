@@ -1,0 +1,34 @@
+id: transactions.csv
+description: Bank transactions with amount / merchant / type.
+columns:
+  - { name: tx_id, type: string }
+  - { name: date, type: date }
+  - { name: merchant, type: string }
+  - { name: category, type: string }
+  - { name: amount, type: number }
+  - { name: type, type: enum, values: [debit, credit] }
+  - { name: account, type: string }
+  - { name: currency, type: string }
+  - { name: country, type: string }
+rows:
+  - { tx_id: TX001, date: '2026-04-01', merchant: AWS,                category: Cloud,      amount: 4821.50,  type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX002, date: '2026-04-01', merchant: Stripe,             category: Revenue,    amount: 12340.00, type: credit, account: main-001,  currency: USD, country: US }
+  - { tx_id: TX003, date: '2026-04-02', merchant: Google Ads,         category: Marketing,  amount: 2100.00,  type: debit,  account: mktg-001,  currency: USD, country: US }
+  - { tx_id: TX004, date: '2026-04-03', merchant: Stripe,             category: Revenue,    amount: 8750.00,  type: credit, account: main-001,  currency: USD, country: US }
+  - { tx_id: TX005, date: '2026-04-04', merchant: Notion,             category: SaaS,       amount: 240.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX006, date: '2026-04-05', merchant: Vercel,             category: Hosting,    amount: 190.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX007, date: '2026-04-07', merchant: Stripe,             category: Revenue,    amount: 18500.00, type: credit, account: main-001,  currency: USD, country: US }
+  - { tx_id: TX008, date: '2026-04-08', merchant: LinkedIn Ads,       category: Marketing,  amount: 1400.00,  type: debit,  account: mktg-001,  currency: USD, country: US }
+  - { tx_id: TX009, date: '2026-04-10', merchant: GitHub,             category: DevTools,   amount: 210.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX010, date: '2026-04-11', merchant: Payroll,            category: Payroll,    amount: 98400.00, type: debit,  account: hr-001,    currency: USD, country: US }
+  - { tx_id: TX011, date: '2026-04-12', merchant: Stripe,             category: Revenue,    amount: 6200.00,  type: credit, account: main-001,  currency: USD, country: US }
+  - { tx_id: TX012, date: '2026-04-14', merchant: Salesforce,         category: CRM,        amount: 1800.00,  type: debit,  account: sales-001, currency: USD, country: US }
+  - { tx_id: TX013, date: '2026-04-15', merchant: Office Supplies Co, category: Office,     amount: 340.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX014, date: '2026-04-15', merchant: Stripe,             category: Revenue,    amount: 22100.00, type: credit, account: main-001,  currency: USD, country: US }
+  - { tx_id: TX015, date: '2026-04-16', merchant: DataDog,            category: Monitoring, amount: 875.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX016, date: '2026-04-17', merchant: OpenAI,             category: AI,         amount: 620.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX017, date: '2026-04-18', merchant: Stripe,             category: Revenue,    amount: 9800.00,  type: credit, account: main-001,  currency: USD, country: US }
+  - { tx_id: TX018, date: '2026-04-20', merchant: Figma,              category: Design,     amount: 450.00,   type: debit,  account: design-001,currency: USD, country: US }
+  - { tx_id: TX019, date: '2026-04-22', merchant: Intercom,           category: Support,    amount: 390.00,   type: debit,  account: ops-001,   currency: USD, country: US }
+  - { tx_id: TX020, date: '2026-04-25', merchant: Stripe,             category: Revenue,    amount: 31500.00, type: credit, account: main-001,  currency: USD, country: US }
+  

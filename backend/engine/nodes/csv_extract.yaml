@@ -1,0 +1,16 @@
+type_id: csv_extract
+description: Read rows from a CSV dataset (mock by default).
+ui:
+  display_name: CSV Extract
+  icon: Table2
+  color: "#0ea5e9"
+  palette: { section: { id: data } }
+input_ports: []
+output_ports:
+  - { name: rows, type: dataframe, store_at: datasets.<source> }
+params:
+  - { name: source, type: enum, description: "Dataset filename", required: true,
+      enum: [leads.csv, products.csv, orders.csv, employees.csv, transactions.csv],
+      widget: select }
+  - { name: limit, type: number, description: "Row limit (optional)", required: false }
+  

@@ -1,0 +1,14 @@
+type_id: evaluator
+description: Evaluate rows against criteria; reports pass / fail rate.
+ui:
+  display_name: Evaluator
+  icon: CheckSquare
+  color: "#8b5cf6"
+  palette: { section: { id: ai } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: criteria, type: expression, required: true,
+      placeholder: "row.score >= 80", widget: code_editor }
+  - { name: label, type: string, default: passed }
+  

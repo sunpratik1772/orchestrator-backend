@@ -1,0 +1,13 @@
+type_id: api_trigger
+description: Trigger via HTTP webhook (returns the request payload).
+ui:
+  display_name: API Trigger
+  icon: Webhook
+  color: "#7c3aed"
+  palette: { section: { id: triggers } }
+input_ports: []
+output_ports:
+  - { name: payload, type: object }
+params:
+  - { name: path, type: string, description: "Webhook path", required: false, default: /webhook }
+  

@@ -1,0 +1,16 @@
+type_id: group_by
+description: Aggregate rows by a column.
+ui:
+  display_name: Group By
+  icon: BarChart3
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: groupBy, type: string, required: true, placeholder: "region" }
+  - { name: aggregateCol, type: string, required: true, placeholder: "total" }
+  - { name: aggregateFn, type: enum, required: true, default: sum,
+      enum: [sum, avg, min, max, count] }
+  - { name: alias, type: string, required: false, placeholder: "total_revenue" }
+  

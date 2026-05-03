@@ -1,0 +1,12 @@
+type_id: loop
+description: Iterate over rows (pass-through; surfaces iteration metadata).
+ui:
+  display_name: Loop
+  icon: RefreshCw
+  color: "#06b6d4"
+  palette: { section: { id: logic } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: maxIterations, type: number, default: 1000 }
+  

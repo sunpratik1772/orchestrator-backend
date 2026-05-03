@@ -1,0 +1,13 @@
+type_id: map_transform
+description: Rename columns or compute new ones from row expressions.
+ui:
+  display_name: Map / Transform
+  icon: Wand2
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: mappings, type: json, required: true, widget: json_editor,
+      description: "[{ to: 'revenue', expression: 'row.qty * row.price' }, { from: 'old', to: 'new' }]" }
+  

@@ -1,0 +1,12 @@
+type_id: filter
+description: Filter rows by an expression (row.column accessible).
+ui:
+  display_name: Filter
+  icon: Filter
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: expression, type: expression, required: true, placeholder: "row.score >= 75", widget: code_editor }
+  

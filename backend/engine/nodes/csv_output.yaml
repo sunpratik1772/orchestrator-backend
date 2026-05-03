@@ -1,0 +1,12 @@
+type_id: csv_output
+description: Serialize rows to a CSV string.
+ui:
+  display_name: CSV Output
+  icon: Download
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: csv, type: text }]
+params:
+  - { name: filename, type: string, default: output.csv }
+  

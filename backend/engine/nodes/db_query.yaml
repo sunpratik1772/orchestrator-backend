@@ -1,0 +1,14 @@
+type_id: db_query
+description: Run a SELECT against a mock dataset (Postgres-style).
+ui:
+  display_name: DB Query
+  icon: Database
+  color: "#0ea5e9"
+  palette: { section: { id: data } }
+input_ports: []
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: query, type: string, description: "SELECT * FROM leads", required: true, widget: textarea }
+  - { name: source, type: enum, description: "Source dataset (mock)", required: false,
+      enum: [leads.csv, products.csv, orders.csv, employees.csv, transactions.csv] }
+  

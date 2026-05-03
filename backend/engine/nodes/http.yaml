@@ -1,0 +1,15 @@
+type_id: http
+description: Fetch data from any HTTP URL.
+ui:
+  display_name: HTTP Request
+  icon: Globe
+  color: "#0ea5e9"
+  palette: { section: { id: data } }
+input_ports: []
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: url, type: string, required: true, placeholder: "https://api.example.com/data" }
+  - { name: method, type: enum, default: GET, enum: [GET, POST, PUT, DELETE, PATCH] }
+  - { name: headers, type: json, required: false, widget: json_editor }
+  - { name: body, type: string, required: false, widget: textarea }
+  

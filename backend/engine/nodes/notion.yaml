@@ -1,0 +1,13 @@
+type_id: notion
+description: Read or write to a Notion database (requires NOTION_API_KEY).
+ui:
+  display_name: Notion
+  icon: BookOpen
+  color: "#000000"
+  palette: { section: { id: integrations } }
+input_ports: [{ name: rows, type: dataframe, optional: true }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: databaseId, type: string, required: true }
+  - { name: action, type: enum, default: query, enum: [query] }
+  

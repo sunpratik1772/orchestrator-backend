@@ -1,0 +1,13 @@
+type_id: sort
+description: Sort rows by a column.
+ui:
+  display_name: Sort
+  icon: ArrowUpDown
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: sortBy, type: string, required: true, placeholder: "salary" }
+  - { name: order, type: enum, default: asc, enum: [asc, desc] }
+  

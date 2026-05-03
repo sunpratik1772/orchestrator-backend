@@ -1,0 +1,34 @@
+id: products.csv
+description: Product catalog with stock and rating.
+columns:
+  - { name: sku, type: string }
+  - { name: name, type: string }
+  - { name: category, type: string }
+  - { name: price, type: number }
+  - { name: cost, type: number }
+  - { name: stock, type: number }
+  - { name: active, type: boolean }
+  - { name: rating, type: number }
+  - { name: supplier, type: string }
+rows:
+  - { sku: PRD-001, name: Wireless Headphones Pro,    category: Electronics, price: 79.99,  cost: 32.00, stock: 234, active: true,  rating: 4.5, supplier: AudioMax }
+  - { sku: PRD-002, name: USB-C 7-Port Hub,           category: Electronics, price: 49.99,  cost: 18.00, stock: 89,  active: true,  rating: 4.2, supplier: TechParts }
+  - { sku: PRD-003, name: Adjustable Laptop Stand,    category: Accessories, price: 39.99,  cost: 14.00, stock: 0,   active: false, rating: 3.9, supplier: DeskWorks }
+  - { sku: PRD-004, name: Mechanical Keyboard TKL,    category: Electronics, price: 129.99, cost: 55.00, stock: 52,  active: true,  rating: 4.8, supplier: KeyLab }
+  - { sku: PRD-005, name: Webcam 4K Autofocus,        category: Electronics, price: 89.99,  cost: 38.00, stock: 17,  active: true,  rating: 4.4, supplier: VisionTech }
+  - { sku: PRD-006, name: XXL Mouse Pad Desk Mat,     category: Accessories, price: 24.99,  cost: 8.00,  stock: 0,   active: false, rating: 4.1, supplier: DeskWorks }
+  - { sku: PRD-007, name: Ergonomic Mouse Wireless,   category: Electronics, price: 64.99,  cost: 26.00, stock: 143, active: true,  rating: 4.6, supplier: ErgoGear }
+  - { sku: PRD-008, name: Monitor Light Bar,          category: Accessories, price: 44.99,  cost: 17.00, stock: 76,  active: true,  rating: 4.3, supplier: LightUp }
+  - { sku: PRD-009, name: Cable Management Kit,       category: Accessories, price: 19.99,  cost: 6.00,  stock: 312, active: true,  rating: 4.0, supplier: OrgPro }
+  - { sku: PRD-010, name: Portable SSD 1TB,           category: Storage,     price: 109.99, cost: 62.00, stock: 28,  active: true,  rating: 4.7, supplier: DataStore }
+  - { sku: PRD-011, name: HDMI 2.1 Cable 3m,          category: Cables,      price: 14.99,  cost: 4.00,  stock: 500, active: true,  rating: 4.2, supplier: CablePro }
+  - { sku: PRD-012, name: Stream Deck Mini,           category: Electronics, price: 79.99,  cost: 34.00, stock: 41,  active: true,  rating: 4.9, supplier: StreamGear }
+  - { sku: PRD-013, name: Noise-Cancel Earplugs,      category: Accessories, price: 29.99,  cost: 9.00,  stock: 0,   active: false, rating: 3.7, supplier: QuietZone }
+  - { sku: PRD-014, name: Phone Stand Magnetic,       category: Accessories, price: 22.99,  cost: 7.00,  stock: 189, active: true,  rating: 4.1, supplier: MagMount }
+  - { sku: PRD-015, name: 27-inch Monitor IPS,        category: Displays,    price: 299.99, cost: 175.00,stock: 14,  active: true,  rating: 4.6, supplier: ViewPro }
+  - { sku: PRD-016, name: USB Microphone Condenser,   category: Audio,       price: 69.99,  cost: 28.00, stock: 63,  active: true,  rating: 4.5, supplier: AudioMax }
+  - { sku: PRD-017, name: Mesh Office Chair,          category: Furniture,   price: 249.99, cost: 120.00,stock: 7,   active: true,  rating: 4.3, supplier: ErgoGear }
+  - { sku: PRD-018, name: Desk Organizer Bamboo,      category: Accessories, price: 34.99,  cost: 11.00, stock: 98,  active: true,  rating: 4.4, supplier: NaturalDesk }
+  - { sku: PRD-019, name: GaN 100W Charger,           category: Chargers,    price: 54.99,  cost: 22.00, stock: 155, active: true,  rating: 4.7, supplier: PowerUp }
+  - { sku: PRD-020, name: Laptop Backpack 17-inch,    category: Bags,        price: 84.99,  cost: 35.00, stock: 44,  active: true,  rating: 4.5, supplier: PackRight }
+  

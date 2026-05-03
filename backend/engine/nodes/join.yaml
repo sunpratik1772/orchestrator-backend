@@ -1,0 +1,16 @@
+type_id: join
+description: Join two upstream datasets on key columns.
+ui:
+  display_name: Join
+  icon: Merge
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports:
+  - { name: left, type: dataframe }
+  - { name: right, type: dataframe }
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: leftKey, type: string, required: true, placeholder: "product_sku" }
+  - { name: rightKey, type: string, required: true, placeholder: "sku" }
+  - { name: joinType, type: enum, default: inner, enum: [inner, left, right, outer] }
+  

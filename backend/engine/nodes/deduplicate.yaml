@@ -1,0 +1,12 @@
+type_id: deduplicate
+description: Remove duplicate rows by a key column.
+ui:
+  display_name: Deduplicate
+  icon: Copy
+  color: "#f59e0b"
+  palette: { section: { id: transform } }
+input_ports: [{ name: rows, type: dataframe }]
+output_ports: [{ name: rows, type: dataframe }]
+params:
+  - { name: key, type: string, required: true, placeholder: "email" }
+  
