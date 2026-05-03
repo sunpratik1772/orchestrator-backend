@@ -328,6 +328,14 @@ def test_gmail_stubs_without_secret(monkeypatch):
     assert out["needsIntegration"] == "gmail"
 
 
+def test_telegram_stubs_without_token(monkeypatch):
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    monkeypatch.delenv("TELEGRAM_CHAT_ID", raising=False)
+    out = _run_one("telegram", {"chatId": "123", "message": "Hi"})
+    assert out["simulated"] is True
+    assert out["needsIntegration"] == "telegram"
+
+
 def test_slack_stubs_without_credentials(monkeypatch):
     monkeypatch.delenv("SLACK_WEBHOOK_URL", raising=False)
     monkeypatch.delenv("SLACK_API_TOKEN_NOW", raising=False)

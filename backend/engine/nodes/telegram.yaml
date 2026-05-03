@@ -1,0 +1,14 @@
+type_id: telegram
+description: Send a Telegram message via Bot API (sendMessage).
+ui:
+  display_name: Telegram
+  icon: Send
+  color: "#229ED9"
+  palette: { section: { id: integrations } }
+input_ports: [{ name: rows, type: dataframe, optional: true }]
+output_ports: [{ name: result, type: object }]
+params:
+  - { name: chatId, type: string, required: false, placeholder: "123456789 or -1001234567890 (or set TELEGRAM_CHAT_ID)" }
+  - { name: message, type: string, widget: textarea }
+  - { name: parseMode, type: string, default: "Markdown", placeholder: "Markdown | HTML | (empty)" }
+  - { name: botToken, type: string, required: false, placeholder: "Override TELEGRAM_BOT_TOKEN env var" }
