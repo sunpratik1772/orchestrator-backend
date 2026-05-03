@@ -23,7 +23,9 @@ contents of `requirements.txt`. Cold start typically < 3 s.
 
 | Name                  | Used by         |
 |-----------------------|-----------------|
-| `SLACK_WEBHOOK_URL`   | slack node      |
+| `SLACK_API_TOKEN_NOW` | slack node (preferred — Bot Token, uses chat.postMessage) |
+| `SLACK_BOT_TOKEN`     | slack node (alias for SLACK_API_TOKEN_NOW) |
+| `SLACK_WEBHOOK_URL`   | slack node (fallback if no bot token)     |
 | `NOTION_API_KEY`      | notion node     |
 | `GITHUB_TOKEN`        | github node     |
 | `GMAIL_CLIENT_SECRET` | gmail node      |

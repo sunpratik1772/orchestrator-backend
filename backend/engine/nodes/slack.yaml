@@ -1,5 +1,5 @@
 type_id: slack
-description: Send a Slack message via incoming webhook.
+description: Send a Slack message via Bot Token (chat.postMessage) or incoming webhook.
 ui:
   display_name: Slack
   icon: MessageSquare
@@ -8,7 +8,6 @@ ui:
 input_ports: [{ name: rows, type: dataframe, optional: true }]
 output_ports: [{ name: result, type: object }]
 params:
-  - { name: webhookUrl, type: string, required: false, placeholder: "https://hooks.slack.com/..." }
   - { name: channel, type: string, default: "#general" }
   - { name: message, type: string, widget: textarea }
-  
+  - { name: webhookUrl, type: string, required: false, placeholder: "https://hooks.slack.com/... (optional, fallback if no bot token)" }
