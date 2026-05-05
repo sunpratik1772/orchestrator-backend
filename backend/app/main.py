@@ -51,6 +51,21 @@ app.include_router(run.router, prefix="/api")
 app.include_router(copilot.router, prefix="/api")
 app.include_router(node_manifest.router, prefix="/api")
 
+# When served behind the Replit shared proxy under the path prefix /pyapi,
+# the proxy does NOT rewrite paths, so requests arrive as /pyapi/api/...
+# Mount the same routers under that prefix so a browser can hit either
+# /api/... (direct/local) or /pyapi/api/... (through the proxy).
+app.include_router(workflows.router, prefix="/pyapi/api")
+app.include_router(run.router, prefix="/pyapi/api")
+app.include_router(copilot.router, prefix="/pyapi/api")
+app.include_router(node_manifest.router, prefix="/pyapi/api")
+
+
+@app.get("/pyapi/healthz")
+def healthz_pyapi() -> dict:
+    return {"ok": True, "via": "pyapi"}
+
+
 # Keep legacy un-prefixed mounts for any callers that hit them directly.
 app.include_router(workflows.router)
 app.include_router(run.router)
